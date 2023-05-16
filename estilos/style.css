@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* Paleta de cores:
+#085280
+#1B89CB
+#3BB4FF
+#CC821B
+#804A00
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-image: linear-gradient(to top,#CC821B,#1B89CB);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.612);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: width .2s,height .2s;
+    transition-timing-function: ease;
+    transform: translate(-50%,-50%);
+}
+
+section#login > div#imagem{
+    background: black url('../imagens/fundo.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+section#login > div#formulario > h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+section#login > div#formulario > p{
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+section#login > div#formulario > form > div.campo{
+    background-color: #804A00;
+    margin-bottom: 5px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+section#login > div#formulario > form > div.campo > label > span {
+    font-size: 2.3em;
+    color: white;
+    padding-top: 7px;
+    padding-left: 5px;
+    
+}
+
+section#login > div#formulario > form > div.campo > input {
+    padding: 10px;
+    height: 50px;
+    color: white;
+    background-color: #fca730 ;
+    border: 3px solid #804A00;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    transform: translate(40px, -47px);
+}
+
+section#login > div#formulario > form > div.campo > input:focus-within{
+    background-color: white;
+}
+
+section#login > div#formulario > form > input[type="submit"]{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #CC821B;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+section#login > div#formulario > form > input[type="submit"]:hover{
+    background-color: #fc9d18;
+    transition: .2s;
+}
+
+section#login > div#formulario > form > a{
+    display: block;
+    font-size: 1em;
+    padding-top: 5px;
+    text-align: center;
+    height: 50px;
+    border: 1px solid #CC821B;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: #CC821B;
+}
+
+section#login > div#formulario > form > a:hover{
+    background-color: #cc9344;
+    color: white;
+    transition: .2s;
+}
