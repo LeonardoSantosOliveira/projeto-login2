@@ -88,7 +88,7 @@ section#login > div#formulario > form > div.campo > input {
     border: 3px solid #804A00;
     width: calc(100% - 40px);
     border-radius: 10px;
-    transform: translate(40px, -47px);
+    transform: translate(40px, -48px);
 }
 
 section#login > div#formulario > form > div.campo > input:focus-within{
